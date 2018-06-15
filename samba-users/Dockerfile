@@ -1,6 +1,6 @@
-from ewindisch/samba-base
+from willthelaw/samba-base
 
-maintainer Eric Windisch <eric@windisch.us>
+maintainer William Law <wlaw@stanford.edu>
 
 env DEBIAN_FRONTEND noninteractive
 
