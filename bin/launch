@@ -12,11 +12,9 @@ docker run -d \
   -v $PWD/etc/samba:/etc/samba \
   -v $PWD/etc:/var/lib/extrausers \
   -v $PWD/var/lib/samba:/var/lib/samba \
-  -v ${GUEST_DIR}:/mnt/guest \
-  -v ${SHARE_DIR}:/mnt/shared \
-  -v ${HOME_DIR}:/home \
+  -v ${DATA_DIR}:/mnt/data \
   ${CONTAINER_PREFIX}/samba-smbd $@
 
-docker run -d \
-  -v $PWD/etc/samba:/etc/samba \
-  ${CONTAINER_PREFIX}/samba-nmbd $@
+#docker run -d \
+#  -v $PWD/etc/samba:/etc/samba \
+#  ${CONTAINER_PREFIX}/samba-nmbd $@
