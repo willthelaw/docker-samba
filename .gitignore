@@ -2,4 +2,9 @@
 .project
 
 # Ignore vim swap files
-*.swp
+*.swpi
+
+#ignore passwd, shadow, group
+../etc/group
+../etc/passwd
+../etc/shadow
